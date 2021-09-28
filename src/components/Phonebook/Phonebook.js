@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addContact } from "../../redux/actions";
-import PropTypes from "prop-types";
 import style from "./Phonebook.module.css";
 
 function PhoneBook({ submitForm }) {
@@ -67,8 +66,5 @@ function PhoneBook({ submitForm }) {
   );
 }
 
-PhoneBook.propTypes = {
-  submitForm: PropTypes.func.isRequired,
-};
 
 export default PhoneBook;

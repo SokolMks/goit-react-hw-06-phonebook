@@ -22,7 +22,7 @@ const Contacts = () => {
     <div className={style.container}>
       <h2 className={style.title}>Contacts</h2>
         <ul className={style.list}>
-          <label className={style.label}>
+          {/* <label className={style.label}>
             Find contacts by name:
             <input
               type="text"
@@ -33,7 +33,7 @@ const Contacts = () => {
               //title="Имя может состоять только из букв, апострофа, тире и пробелов. Например Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan и т. п."
               required
             />
-          </label>
+          </label> */}
           {contacts.map(({ id, name, number }) => (
             <li key={id} className={style.listElement}>
               <p>
